@@ -30,13 +30,19 @@ export default class App extends React.Component {
     return "something";
   }
 
-  chooseItemColor = () => {
-
+  chooseItemColor = (itemNumber) => {
+    if (itemArray[itemNumber] !== "empty") {
+      return itemArray[itemNumber] ? "red" : "green";
+    }
+    return "black";
   }
 
   reset = () => {
-
-  }
+    itemArray.fill("empty");
+    this.setState({winMessaged : ""})
+    this.forceUpdate();
+    // forces the state to update 
+  };
 
   winGame = () => {
 
