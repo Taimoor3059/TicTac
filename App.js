@@ -1,7 +1,11 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, TouchableOpacity } from 'react-native';
+import { Entypo } from "@expo/vector-icons";
+import { Button } from "native-base";
 
 
+
+var itemArray = new Array(9).fill("empty");
 
 export default class App extends React.Component {
   constructor(props) {
@@ -12,8 +16,11 @@ export default class App extends React.Component {
     }
   }
 
-  drawItem = () => {
-    
+  drawItem = (itemNumber) => {
+    if (itemArray[itemNumber] === "empty") {
+      itemArray[itemNumber] = this.state.isCross
+      this.setState({isCross : !itemArray[itemNumber]})
+    }
   }
 
   chooseItemIcon = () => {
@@ -29,7 +36,7 @@ export default class App extends React.Component {
   }
 
   winGame = () => {
-    
+
   }
 
   render() {
