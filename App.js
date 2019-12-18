@@ -45,8 +45,14 @@ export default class App extends React.Component {
   };
 
   winGame = () => {
-
+    if ( (itemArray[0] !== "empty") && (itemArray[0] == itemArray[1]) && (itemArray[1] == itemArray[2]) ) {
+      this.setState({winMessaged: () => (itemArray[0] ? "Cross" : "Circle").concat("Win") })
+    } else if ( (itemArray[3] !== "empty") && (itemArray[3] == itemArray[4]) && (itemArray[4] == itemArray[5]) ) {
+      this.setState({winMessaged: () => (itemArray[3] ? "Cross" : "Circle").concat("Win") })
+    }
+      
   }
+  
 
   render() {
     return (
