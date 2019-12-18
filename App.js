@@ -23,8 +23,11 @@ export default class App extends React.Component {
     }
   }
 
-  chooseItemIcon = () => {
-
+  chooseItemIcon = (itemNumber) => {
+    if (itemArray[itemNumber] !== "empty") {
+      return itemArray[itemNumber] ? "cross" : "circle";
+    }
+    return "something";
   }
 
   chooseItemColor = () => {
