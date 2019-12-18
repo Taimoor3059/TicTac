@@ -12,6 +12,26 @@ export default class App extends React.Component {
     }
   }
 
+  drawItem = () => {
+    
+  }
+
+  chooseItemIcon = () => {
+
+  }
+
+  chooseItemColor = () => {
+
+  }
+
+  reset = () => {
+
+  }
+
+  winGame = () => {
+    
+  }
+
   render() {
     return (
       <View style={styles.container}>
