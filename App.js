@@ -21,11 +21,13 @@ export default class App extends React.Component {
       itemArray[itemNumber] = this.state.isCross
       this.setState({isCross : !itemArray[itemNumber]})
     }
+
+    this.winGame();
   }
 
   chooseItemIcon = (itemNumber) => {
     if (itemArray[itemNumber] !== "empty") {
-      return itemArray[itemNumber] ? "cross" : "circle";
+      return itemArray[itemNumber] ? "Cross" : "Circle";
     }
     return "something";
   }
