@@ -69,7 +69,41 @@ export default class App extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text>this is cool </Text>
+        <View style={styles.grid}>
+          <View style={styles.row}>
+
+            
+            <View style={styles.item}>
+            <TouchableOpacity onPress = { () => this.drawItem(0) }>
+              <Entypo
+                name = {this.chooseItemIcon(0)}
+                size = {50}
+                color = {this.chooseItemColor(0)} 
+              />
+            </TouchableOpacity>
+            </View>
+            <View style={styles.item}>
+            <TouchableOpacity onPress = { () => this.drawItem(0) }>
+              <Entypo
+                name = {this.chooseItemIcon(0)}
+                size = {50}
+                color = {this.chooseItemColor(0)} 
+              />
+            </TouchableOpacity>
+            </View>
+            <View style={styles.item}>
+            <TouchableOpacity onPress = { () => this.drawItem(0) }>
+              <Entypo
+                name = {this.chooseItemIcon(0)}
+                size = {50}
+                color = {this.chooseItemColor(0)} 
+              />
+            </TouchableOpacity>
+            </View>
+
+
+          </View>
+        </View>
       </View>
     );
   }
@@ -83,4 +117,4 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
 });
-
+ 
