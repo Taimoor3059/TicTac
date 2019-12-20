@@ -174,7 +174,7 @@ export default class App extends React.Component {
         </View>
         <Text style={styles.winMessage}>{this.state.winMessaged}</Text>
         <Button full rounded primary style={styles.button}>
-          <Text>Reset Game</Text>
+          <Text style={styles.btntext}>Reset Game</Text>
         </Button>
       </View>
     );
@@ -207,6 +207,11 @@ const styles = StyleSheet.create({
   button: {
     margin: 20,
     padding: 10
+  },
+  btntext: {
+    color: "#FFF",
+    fontSize: 35,
+    fontWeight: 'bold'
   }
 
 });
