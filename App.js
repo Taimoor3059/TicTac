@@ -29,7 +29,7 @@ export default class App extends React.Component {
     if (itemArray[itemNumber] !== "empty") {
       return itemArray[itemNumber] ? "Cross" : "Circle";
     }
-    return "something";
+    return "pencil";
   }
 
   chooseItemColor = (itemNumber) => {
@@ -72,7 +72,7 @@ export default class App extends React.Component {
         <View style={styles.grid}>
           <View style={styles.row}>
 
-            
+
             <View style={styles.item}>
             <TouchableOpacity onPress = { () => this.drawItem(0) }>
               <Entypo
@@ -116,5 +116,17 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
+  grid: {
+
+  },
+  row: {
+    flexDirection: 'row'
+  },
+  item: {
+    borderWidth: 2,
+    borderColor: "#000",
+    padding: 30
+  }
+
 });
  
