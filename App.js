@@ -27,7 +27,7 @@ export default class App extends React.Component {
 
   chooseItemIcon = (itemNumber) => {
     if (itemArray[itemNumber] !== "empty") {
-      return itemArray[itemNumber] ? "Cross" : "Circle";
+      return (itemArray[itemNumber] ? "Cross" : "Circle");
     }
     return "pencil";
   }
@@ -172,6 +172,10 @@ export default class App extends React.Component {
           </View>
           
         </View>
+        <Text style={styles.winMessage}>{this.state.winMessaged}</Text>
+        <Button full rounded primary style={styles.button}>
+          <Text>Reset Game</Text>
+        </Button>
       </View>
     );
   }
@@ -194,6 +198,15 @@ const styles = StyleSheet.create({
     borderWidth: 2,
     borderColor: "#000",
     padding: 30
+  },
+  winMessage: {
+    padding: 20,
+    fontSize: 25,
+    fontWeight: 'bold'
+  },
+  button: {
+    margin: 20,
+    padding: 10
   }
 
 });
