@@ -70,6 +70,7 @@ export default class App extends React.Component {
     return (
       <View style={styles.container}>
         <View style={styles.grid}>
+
           <View style={styles.row}>
 
 
@@ -83,26 +84,93 @@ export default class App extends React.Component {
             </TouchableOpacity>
             </View>
             <View style={styles.item}>
-            <TouchableOpacity onPress = { () => this.drawItem(0) }>
+            <TouchableOpacity onPress = { () => this.drawItem(1) }>
               <Entypo
-                name = {this.chooseItemIcon(0)}
+                name = {this.chooseItemIcon(1)}
                 size = {50}
-                color = {this.chooseItemColor(0)} 
+                color = {this.chooseItemColor(1)} 
               />
             </TouchableOpacity>
             </View>
             <View style={styles.item}>
-            <TouchableOpacity onPress = { () => this.drawItem(0) }>
+            <TouchableOpacity onPress = { () => this.drawItem(2) }>
               <Entypo
-                name = {this.chooseItemIcon(0)}
+                name = {this.chooseItemIcon(2)}
                 size = {50}
-                color = {this.chooseItemColor(0)} 
+                color = {this.chooseItemColor(2)} 
               />
             </TouchableOpacity>
             </View>
 
 
           </View>
+          <View style={styles.row}>
+
+
+            <View style={styles.item}>
+            <TouchableOpacity onPress = { () => this.drawItem(3) }>
+              <Entypo
+                name = {this.chooseItemIcon(3)}
+                size = {50}
+                color = {this.chooseItemColor(3)} 
+              />
+            </TouchableOpacity>
+            </View>
+            <View style={styles.item}>
+            <TouchableOpacity onPress = { () => this.drawItem(4) }>
+              <Entypo
+                name = {this.chooseItemIcon(4)}
+                size = {50}
+                color = {this.chooseItemColor(4)} 
+              />
+            </TouchableOpacity>
+            </View>
+            <View style={styles.item}>
+            <TouchableOpacity onPress = { () => this.drawItem(5) }>
+              <Entypo
+                name = {this.chooseItemIcon(5)}
+                size = {50}
+                color = {this.chooseItemColor(5)} 
+              />
+            </TouchableOpacity>
+            </View>
+
+
+          </View>
+          <View style={styles.row}>
+
+
+            <View style={styles.item}>
+            <TouchableOpacity onPress = { () => this.drawItem(6) }>
+              <Entypo
+                name = {this.chooseItemIcon(6)}
+                size = {50}
+                color = {this.chooseItemColor(6)} 
+              />
+            </TouchableOpacity>
+            </View>
+            <View style={styles.item}>
+            <TouchableOpacity onPress = { () => this.drawItem(7) }>
+              <Entypo
+                name = {this.chooseItemIcon(7)}
+                size = {50}
+                color = {this.chooseItemColor(7)} 
+              />
+            </TouchableOpacity>
+            </View>
+            <View style={styles.item}>
+            <TouchableOpacity onPress = { () => this.drawItem(8) }>
+              <Entypo
+                name = {this.chooseItemIcon(8)}
+                size = {50}
+                color = {this.chooseItemColor(8)} 
+              />
+            </TouchableOpacity>
+            </View>
+
+
+          </View>
+          
         </View>
       </View>
     );
