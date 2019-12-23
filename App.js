@@ -69,6 +69,7 @@ export default class App extends React.Component {
   render() {
     return (
       <View style={styles.container}>
+        <Text style={styles.heading}>Welcome to Taimoor's first game!</Text>
         <View style={styles.grid}>
 
           <View style={styles.row}>
@@ -212,6 +213,12 @@ const styles = StyleSheet.create({
     color: "#FFF",
     fontSize: 35,
     fontWeight: 'bold'
+  },
+  heading: {
+    fontSize: 25,
+    fontWeight: 'bold',
+    padding: 10,
+    marginBottom: 5
   }
 
 });
