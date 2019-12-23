@@ -27,7 +27,7 @@ export default class App extends React.Component {
 
   chooseItemIcon = (itemNumber) => {
     if (itemArray[itemNumber] !== "empty") {
-      return (itemArray[itemNumber] ? "Cross" : "Circle");
+      return itemArray[itemNumber] ? "Cross" : "Circle";
     }
     return "pencil";
   }
@@ -174,7 +174,7 @@ export default class App extends React.Component {
         </View>
         <Text style={styles.winMessage}>{this.state.winMessaged}</Text>
         <Button full rounded primary style={styles.button}>
-          <Text style={styles.btntext}>Reset Game</Text>
+          <Text style={styles.btntext} onPress={this.reset}>Reset Game</Text>
         </Button>
       </View>
     );
